@@ -4,9 +4,37 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     >
-<Button android:id="@+id/button1"
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Introduce número"
+        />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:tag="0"
+        android:onClick="sePulsa0"
+        />
+
+    <Button android:id="@+id/button1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/boton"
     android:onClick="sePulsa"/>
+
+    <TextView
+        android:id="@+id/salida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/otroColor"
+        android:hint="Resultado"
+        />
 </LinearLayout>
